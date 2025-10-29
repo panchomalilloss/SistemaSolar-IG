@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Contenedor del Minimapa */
+#minimap-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  z-index: 10;
+}
+
+#minimap-container canvas {
+  display: block;
+}
+
+/* Información de control */
+#control-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+/* Información del Planeta */
+#planet-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  z-index: 10;
+  /* El color del borde izquierdo será dinámico */
+  border-left: 4px solid var(--planet-color, #00ffff);
+  max-width: 300px; /* Aumentamos un poco el ancho */
+  transition: opacity 0.5s, border-left-color 0.5s;
+}
+
+#planet-info.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#planet-info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--planet-color, #00ffff); /* El color del título será dinámico */
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 5px;
+}
+
+#planet-info p {
+  margin: 6px 0;
+  font-size: 0.9em;
+}
+
+#info-details {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-style: italic;
+  color: #cccccc;
+}
