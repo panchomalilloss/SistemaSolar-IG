@@ -10,7 +10,7 @@ Este proyecto simula un sistema solar interactivo utilizando la librería **Thre
 
 <div align="center">
     <a href="https://youtu.be/558tFgyCePY" target="_blank">
-        <img src="https://youtu.be/558tFgyCePY/0.jpg" alt="Video Demostración del Sistema Solar 3D" style="max-width:100%;">
+        <img src="https://img.youtube.com/vi/558tFgyCePY/0.jpg" alt="Video Demostración del Sistema Solar 3D" style="max-width:100%;">
     </a>
 </div>
 
